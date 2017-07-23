@@ -1,53 +1,45 @@
+/* BEGIN GLOBAL STYLING */
 html {
   font-size: 18px;
   font-family: Helvetica, sans-serif;
   color: white;
 }
 
-
-/* BEGIN BANNER STYLING */
-.site-margin {
-  display: flex;
-  max-width: 960px;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .margin {
-  display: flex;
   max-width: 960px;
   margin: 0 auto;
 }
+/* END GLOBAL STYLING */
 
-#banner {
-  display: block;
+/* BEGIN TOP-BAR STYLING */
+#top-bar {
   background-color: black;
 }
 
-#banner img {
-  display: block;
-  height: 1.5rem;
-  padding: 0.5rem;
-}
-
-#banner span, #LargeNav span {
+#sas-container {
   display: flex;
-  font-size: 1rem;
 }
 
-#banner span {
-  padding: 0.66rem 0.5rem;
+#sas-container img {
+  margin: auto 0;
+  height: 1.5rem;
+  padding-right: 1rem;
 }
 
-#banner-img {
+#sas-inc {
+  padding: 0.66rem 0;
+}
+/* END TOP-BAR STYLING */
+
+/* BEGIN BANNER STYLING */
+#banner-bg {
+  display: flex;
   background: url(../imgs/moto.jpeg) no-repeat center;
   background-size: cover;
   height: 25rem;
 }
 
 #arrival {
-  display: block;
   margin-top: 9rem;
   width: 20rem;
   padding: 2rem 3rem;
@@ -55,37 +47,51 @@ html {
 }
 
 #arrival h1, h2 {
-  color: white;
   font-weight: bold;
+  margin: 0.25rem 0;
 }
 
 #arrival h1 {
-  margin-bottom: 0.5rem;
   font-size: 1rem;
 }
 
 #arrival h2 {
   font-size: 2rem;
 }
+/* END BANNER STYLING */
 
-#LargeNav {
-   background-color: firebrick;
+/* BEGIN NAV STYLING */
+#LargeNav, #SmallNav {
+  background-color: firebrick;
 }
 
-#LargeNav span {
+.NavBar {
+  display: flex;
   justify-content: space-between;
+}
+
+.nav-item {
   padding: 0.75rem 0;
 }
 
-#LargeNav div span a {
+#LargeNav div p a, #SmallNav div p a {
   color: white;
   text-decoration: none;
 }
-/* END BANNER STYLING */
 
-/* BEGIN BODY STYLING */
+#SmallNav {
+  display: flex;
+}
+/* END NAV STYLING */
+
+/* BEGIN PRODUCT STYLING */
+#product-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product {
-  display: block;
+  flex-direction: column;
   border: 4px solid black;
   margin-top: 3rem;
   width: 30%;
@@ -93,13 +99,12 @@ html {
 
 .product-img {
   display: flex;
-  align-items: center;
   padding: 2rem;
   height: 9rem;
 }
 
 .product img {
-  display: block;
+  margin: auto;
   max-width: 100%;
   max-height: 100%;
 }
@@ -108,4 +113,42 @@ html {
   text-align: center;
   background-color: black;
   padding: 0.5rem 0; 
+}
+/* END PRODUCT STYLING *?
+
+/* BEGIN INFO STYLING */
+#info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0 4rem 0;
+}
+
+.info {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.title {
+  background-color: black;
+}
+
+.title p {
+  padding: 1rem 0 1rem 2rem;
+}
+
+.data {
+  color: black;
+}
+/* END INFO STYLING */
+
+/* BEGIN FOOTER STYLING */
+#copyright {
+  display: block;
+  background-color: black;
+}
+
+#copyright p {
+  padding: 4rem 0;
 }

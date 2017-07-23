@@ -9,16 +9,20 @@
   
   
   <body>
-    <!-- Header Section, includes large banner image and nav bar. -->
+    <!-- Header Section, includes top bar, BG image and nav bar. -->
     <header>
-      <div id="banner">
+      <div id="top-bar">
         <div class="margin">
-          <img src="resources/imgs/logo.png" alt="Secret Agent Supply Logo">
-          <span>SECRET AGENT SUPPLY INC.</span>
+          <div id="sas-container">
+            <img src="resources/imgs/logo.png" alt="Secret Agent Supply Logo">
+          <div id="sas-inc">
+            <span>SECRET AGENT SUPPLY INC.</span>
+          </div>
+          </div>
         </div>
       </div>
-      <div id="banner-img">
-        <div class="site-margin">
+      <div id="banner-bg">
+        <div class="margin">
           <div id="arrival">
             <h1>NEW ARRIVAL</h1>
             <h2>SPORT BIKES AND MOTORCYCLES</h2>
@@ -27,27 +31,45 @@
       </div>
       <!-- Large nav for desktop site -->
       <nav id="LargeNav">
-        <div class="site-margin">
-          <span><a href="#">Eyewear</a></span>
-          <span><a href="#">Apparel</a></span>
-          <span><a href="#">Gadgets</a></span>
-          <span><a href="#">Vehicles</a></span>
-          <span><a href="#">Glasses</a></span>
-          <span><a href="#">Contact</a></span>
+        <div class="margin">
+          <div class="NavBar">
+            <div class="nav-item">
+              <p><a href="#">Eyewear</a></p>
+            </div>
+            <div class="nav-item">
+              <p><a href="#">Apparel</a></p>
+            </div>
+            <div class="nav-item">
+              <p><a href="#">Gadgets</a></p>
+            </div>
+            <div class="nav-item">
+              <p><a href="#">Vehicles</a></p>
+            </div>
+            <div class="nav-item">
+              <p><a href="#">Glasses</a></p>
+            </div>
+            <div class="nav-item">
+              <p><a href="#">Contact</a></p>
+            </div>      
+          </div>
         </div>
       </nav>
       <!-- Small nav for tablets and phones -->
       <nav id="SmallNav">
-        <div class="site-margin">
-          <span><a href="#">Menu</a></span>
+        <div class="margin">
+          <div class="NavBar">
+            <div class="nav-item">
+              <p><a href="#">Menu</a></p>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
     
     <!-- Main section, includes products as well as hours and location. -->
     <main>
-      <div id="shop">
-        <div class="site-margin">
+      <div class="margin">
+        <div id="product-container">
           <div class="product">
             <div class="product-img">
               <img src="resources/imgs/pen.png" alt="Exploding Pen">
@@ -67,22 +89,32 @@
             <p>Thermal Glasses</p>
           </div>
         </div>
-      <div>
-        <div class="info">
-          <p class="title">Location</p>
-          <p class="data">-47.346436, 84.32354</p>
-        </div>
-        <div class="info">
-          <p class="title">Hours</p>
-          <p class="data">0800 - 1800</p>
-        </div>
+      </div>
+      <div class="margin">
+        <div id="info">
+          <div class="info">
+            <div class="title">
+              <p>Location</p>
+            </div>
+            <p class="data">-47.346436, 84.32354</p>
+          </div>
+          <div class="info">
+            <div class="title">
+              <p>Hours</p>
+            </div>
+            <p class="data">0800 - 1800</p>
+          </div>
         </div>
       </div>
     </main>
     
     <!-- Basic footer, has copyright info. -->
     <footer>
-      <p>&copy; Secret Agent Supply Inc.</p>
+      <div id="copyright">
+        <div class="margin">
+          <p>&copy; Secret Agent Supply Inc.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
