@@ -152,3 +152,48 @@ html {
 #copyright p {
   padding: 4rem 0;
 }
+/* END FOOTER STYLING */
+
+/* BEGIN MEDIA QUERY STYLING */
+@media only screen and (min-width: 1024px) {
+  #SmallNav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #LargeNav, #thermal {
+    display: none;
+  }
+  
+  .product {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #watch {
+    display: none;
+  }
+  
+  .product {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #info {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+  
+  .info {
+    width: 90%;
+    padding-bottom: 1rem;
+  }
+  
+  #copyright {
+    text-align: center;
+  }
+}
+/* END MEDIA QUERY STYLING */
