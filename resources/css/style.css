@@ -41,6 +41,7 @@ html {
 
 #arrival {
   margin-top: 9rem;
+  justify-content: center;
   width: 20rem;
   padding: 2rem 3rem;
   background-color: black;
@@ -81,6 +82,7 @@ html {
 
 #SmallNav {
   display: flex;
+  
 }
 /* END NAV STYLING */
 
@@ -159,6 +161,9 @@ html {
   #SmallNav {
     display: none;
   }
+  .flex {
+  flex: 1;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -168,6 +173,10 @@ html {
   
   .product {
     width: 47%;
+  }
+  
+  .flex {
+  flex: 1;
   }
 }
 
